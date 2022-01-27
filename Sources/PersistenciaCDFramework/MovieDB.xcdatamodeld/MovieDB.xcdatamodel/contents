@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21D49" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="MovieCD" representedClassName="MovieCD" syncable="YES" codeGenerationType="class">
+        <attribute name="id" attributeType="String"/>
+        <attribute name="lanzamiento" attributeType="String"/>
+        <attribute name="poster" optional="YES" attributeType="String"/>
+        <attribute name="sinopsis" attributeType="String"/>
+        <attribute name="titulo" attributeType="String"/>
+    </entity>
+    <entity name="TvSerieCD" representedClassName="TvSerieCD" syncable="YES" codeGenerationType="class">
+        <attribute name="episodios" attributeType="String"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="lanzamiento" attributeType="String"/>
+        <attribute name="poster" optional="YES" attributeType="String"/>
+        <attribute name="sinopsis" attributeType="String"/>
+        <attribute name="temporadas" attributeType="String"/>
+        <attribute name="titulo" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="MovieCD" positionX="-27" positionY="18" width="128" height="104"/>
+        <element name="TvSerieCD" positionX="156.947998046875" positionY="-22.934326171875" width="128" height="134"/>
+    </elements>
+</model>
