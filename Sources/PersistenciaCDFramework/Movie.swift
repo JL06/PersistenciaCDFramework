@@ -8,7 +8,6 @@
 import Foundation
 
 public struct Movies: Decodable {
-    let status: String
     public let data: [Movie]
 }
 
@@ -28,5 +27,6 @@ public struct Movie: Decodable {
         case titulo = "title"
         case sinopsis = "overview"
         case lanzamiento = "release_date"
+        case imagen = "poster_path"
     }
 }

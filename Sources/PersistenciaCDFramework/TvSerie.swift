@@ -8,7 +8,6 @@
 import Foundation
 
 public struct TvSeries: Decodable {
-    let status: String
     public let data: [TvSerie]
 }
 
@@ -32,6 +31,7 @@ public struct TvSerie: Decodable {
         case lanzamiento = "first_air_date"
         case episodios = "number_of_episodes"
         case temporadas = "number_of_seasons"
+        case imagen = "poster_path"
     }
     
 }
