@@ -8,7 +8,18 @@
 import Foundation
 
 public struct Movies: Decodable {
-    public let data: [Movie]
+    public let paginas: Int
+    public let peliculas: [Movie]
+    public let totalPaginas: Int
+    public let totalResultados: Int
+    
+    enum CodingKeys: String, CodingKey {
+        case paginas = "page"
+        case peliculas = "results"
+        case totalPaginas = "total_pages"
+        case totalResultados = "total_results"
+    }
+    
 }
 
 public struct Movie: Decodable {
