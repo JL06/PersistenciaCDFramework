@@ -8,14 +8,23 @@
 import Foundation
 
 public struct TvSeries: Decodable {
-    public let data: [TvSerie]
+    public let series: [TvSerie]
+    public let paginas, totalPaginas, totalResultados: String
+    
+    enum CodingKeys: String, CodingKey {
+        case paginas = "page"
+        case series = "results"
+        case totalPaginas = "total_pages"
+        case totalResultados = "total_results"
+    }
 }
 
 public struct TvSerie: Decodable {
-    public let id, titulo, sinopsis, episodios, temporadas, lanzamiento: String
+    public let titulo, sinopsis, episodios, temporadas, lanzamiento: String
+    public let id: Int
     public var imagen:String?
     
-    public init(id: String, titulo: String, sinopsis: String, episodios: String, temporadas: String, lanz: String) {
+    public init(id: Int, titulo: String, sinopsis: String, episodios: String, temporadas: String, lanz: String) {
         self.id = id
         self.titulo = titulo
         self.sinopsis = sinopsis
