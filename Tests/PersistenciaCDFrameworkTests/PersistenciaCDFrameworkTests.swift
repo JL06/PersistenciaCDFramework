@@ -20,13 +20,13 @@ final class PersistenciaCDFrameworkTests: XCTestCase {
     }
     
     func testMovie () {
-        let peli = Movie(id: "1", titulo: "Club de la Pelea", sinopsis: "Pelicula con Brad Pitt", lanz: "2000")
+        let peli = Movie(id: 1, titulo: "Club de la Pelea", sinopsis: "Descripcion", lanz: "2000")
         XCTAssertNotNil(peli)
         XCTAssertEqual(peli.titulo, "Club de la Pelea")
     }
     
     func testTvSerie () {
-        let serie = TvSerie(id: "1", titulo: "Dexter", sinopsis: "Trata de un asesino serial", episodios: "60", temporadas: "7", lanz: "2002")
+        let serie = TvSerie(id: 1, titulo: "Dexter", sinopsis: "Asesino Serial", lanz: "2002", votos: 7.5)
         XCTAssertNotNil(serie)
         XCTAssertEqual(serie.titulo, "Dexter")
         

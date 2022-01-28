@@ -21,10 +21,11 @@ public struct TvSeries: Decodable {
 
 public struct TvSerie: Decodable {
     public let titulo, sinopsis, lanzamiento: String
-    public let id, votacion: Int
+    public let id: Int
+    public let votacion: Double
     public var imagen:String?
     
-    public init(id: Int, titulo: String, sinopsis: String, lanz: String, votos: Int) {
+    public init(id: Int, titulo: String, sinopsis: String, lanz: String, votos: Double) {
         self.id = id
         self.titulo = titulo
         self.sinopsis = sinopsis
