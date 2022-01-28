@@ -9,7 +9,7 @@ import Foundation
 
 public struct TvSeries: Decodable {
     public let series: [TvSerie]
-    public let paginas, totalPaginas, totalResultados: String
+    public let paginas, totalPaginas, totalResultados: Int
     
     enum CodingKeys: String, CodingKey {
         case paginas = "page"
