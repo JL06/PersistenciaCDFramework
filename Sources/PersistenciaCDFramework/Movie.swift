@@ -23,10 +23,11 @@ public struct Movies: Decodable {
 }
 
 public struct Movie: Decodable {
-    public let id, titulo, sinopsis, lanzamiento: String
+    public let titulo, sinopsis, lanzamiento: String
+    public let id: Int
     public var imagen:String?
     
-    public init(id: String, titulo: String, sinopsis: String, lanz: String) {
+    public init(id: Int, titulo: String, sinopsis: String, lanz: String) {
         self.id = id
         self.titulo = titulo
         self.sinopsis = sinopsis
